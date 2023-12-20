@@ -1,0 +1,26 @@
+{
+  "name": "carbonleaf-metadata",
+  "version": "1.0.0",
+  "description": "Audio file conversion and metadata tagging for live show recordings",
+  "main": "index.js",
+  "scripts": {
+    "format": "npx prettier . --write",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jdougross/carbonleaf-metadata"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "fs": "^0.0.1-security",
+    "prettier": "^3.1.1",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.24"
+  }
+}

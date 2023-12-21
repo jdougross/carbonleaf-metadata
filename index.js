@@ -25,11 +25,10 @@ function makeTitle(abbr) {
   return manualTitle;
 }
 
-const path = "~/desktop/CLUSB All";
-
-const srcDir = `${path}/- wav files`;
-const destinationALAC = `${path}/ALAC - ${albumName}`;
-const destinationMP3 = `${path}/${albumName}`;
+const path = "../../CLUSB All";
+const srcDir = `${path}/- metadata working`;
+const destinationALAC = `${srcDir}/ALAC - ${albumName}`;
+const destinationMP3 = `${srcDir}/${albumName}`;
 
 fs.existsSync(destinationALAC) &&
   fs.rmSync(destinationALAC, { recursive: true, force: true });

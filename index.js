@@ -65,12 +65,13 @@ mappings.forEach(({ filename, track, title }) => {
     )
     .output(`${destinationALAC}/${track} ${title}.m4a`)
     .on("end", () => console.log("ALAC -", title, "- done "))
+    .on("error", (error) => console.log("ERROR - ", "alac -", title, error))
     .run();
 });
 
 mappings.forEach(({ filename, track, title }) => {
   ffmpeg(`${srcDir}/${filename}`)
-    .audioCodec("alac")
+    .toFormat("mp3")
     .outputOptions(
       "-metadata",
       `artist=${artist}`,
@@ -81,7 +82,8 @@ mappings.forEach(({ filename, track, title }) => {
       "-metadata",
       `track=${track}/${trackCount}`,
     )
-    .output(`${destinationMP3}/${track} ${title}.m4a`)
+    .output(`${destinationMP3}/${track} ${title}.mp3`)
     .on("end", () => console.log("mp3 -", title, "- done "))
+    .on("error", (error) => console.log("ERROR - ", "mp3 -", title, error))
     .run();
 });

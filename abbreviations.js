@@ -70,7 +70,7 @@ const Alive = {
 
 const IndianSummer = {
   "Life Less Ordinary": ["LLO"],
-  "What About Everyhing": ["WAE"],
+  "What About Everything": ["WAE"],
   "Changeless": ["CHG", "CHANGE"],
   "This Is My Song": ["TIMS", "MYSONG"],
   "Grey Sky Eyes": ["GSE", "GREY"],

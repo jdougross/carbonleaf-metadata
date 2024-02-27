@@ -87,3 +87,11 @@ mappings.forEach(({ filename, track, title }) => {
     .on("error", (error) => console.log("ERROR - ", "mp3 -", title, error))
     .run();
 });
+
+
+console.log(`\n \n SET LIST \n \n`)
+mappings.forEach(({ filename, track, title }) => {
+  console.log(`${track} ${title}`)
+})
+
+console.log(`\n \n`)

@@ -200,7 +200,9 @@ const Misc = {
   "Carter's Christmas Beard": ["CXB", "BEARD"],
   "Barbecue (from Emmet Otter's Jugband Christmas": ["BBQ"],
   "Intro": ["INT", "INTRO"],
-  "": [""],
+  "Morrison's Jig": ["MJ"],
+  "Banish Misfortune": ["BAN"],
+  "Rocky Road to Dublin": ["RRD"],
   "": [""],
   "": [""],
 };

@@ -186,11 +186,11 @@ const TimeIsThePlayground = {
   "Love for Sale": ["L4S"],
   "Monday Night in Germantown": ["MNG"],
   "City by the Sea": ["CBS"],
-  "Catching Windmills": ["CATCH", "WIND"],
+  "Catching Windmill": ["CATCH", "WIND"],
   "Neon Signs": ["NEON"],
   "Call Ahead": ["AHEAD", "CALL"],
   "Pretending": ["PRE"],
-  "You and Me": ["YOU"],
+  "You and Me": ["YOU", "YAM", "YOUME"],
 };
 
 const Misc = {

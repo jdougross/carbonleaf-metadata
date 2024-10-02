@@ -25,7 +25,7 @@ function makeTitle(abbr) {
   return manualTitle;
 }
 
-const path = "../../CLUSB All";
+const path = "../../desktop/CLUSB All";
 const srcDir = `${path}/- metadata working`;
 const destinationALAC = `${srcDir}/ALAC - ${albumName}`;
 const destinationMP3 = `${srcDir}/${albumName}`;

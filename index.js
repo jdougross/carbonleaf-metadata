@@ -72,6 +72,7 @@ mappings.forEach(({ filename, track, title }) => {
 mappings.forEach(({ filename, track, title }) => {
   ffmpeg(`${srcDir}/${filename}`)
     .toFormat("mp3")
+    .audioBitrate(128) // 64kbps bitrate led to calculating double-length duration values
     .outputOptions(
       "-metadata",
       `artist=${artist}`,

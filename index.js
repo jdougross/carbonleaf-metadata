@@ -1,3 +1,4 @@
+require('dotenv').config()
 const abbreviations = require("./abbreviations");
 const fs = require("fs");
 const readlineSync = require("readline-sync");
@@ -25,8 +26,8 @@ function makeTitle(abbr) {
   return manualTitle;
 }
 
-const path = "../../desktop/CLUSB All";
-const srcDir = `${path}/- metadata working`;
+const baseDir = process.env.BASE_DIR;
+const srcDir = `${baseDir}/- metadata working`;
 const destinationALAC = `${srcDir}/ALAC - ${albumName}`;
 const destinationMP3 = `${srcDir}/${albumName}`;
 
